@@ -6,4 +6,4 @@ Download the project and open index.html or go to https://sebadasta.github.io/CS
 ## License
 
 This is just a simply tool to practice for the exam. Please refer to ServiceNow Documentation for reliable information.
-This set is based on a community post created by Lon Landry. That contains around 700 questions.
+This set is based on a community post created by Lon Landry. That contains around 600 questions.
