@@ -1,0 +1,31 @@
+.pointer {cursor: pointer;  font-weight: 400;}
+
+.pointer li {list-style: circle;}
+
+.pointer li:hover {list-style: disc !important;}
+
+.disable-div {pointer-events: none;}
+
+.navbar_color{background-color: #76b899 !important;cursor: default;}
+
+
+.card-header:hover{
+    transition-property: background-color;
+    transition-duration: 0.51s;
+    background-color: rgb(76 127 175 / 30%);
+}
+
+.card-header{
+    transition-property: background-color;
+    transition-duration: 0.25s;
+
+}
+
+.candidate{
+    transition-property: font-weight;
+    transition-duration: 0.51s;
+    font-weight: 750;
+    color: #4c7faf;
+    list-style: disc !important;
+}
+
