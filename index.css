@@ -29,3 +29,16 @@
     list-style: disc !important;
 }
 
+.reportBtn:hover{
+transition-property: color;
+transition-duration: 0.51s;
+color:#fffcf6;
+
+}
+
+.reportBtn{
+    transition-property: color;
+    transition-duration: 0.51s;
+    color:wheat;
+    
+    }
