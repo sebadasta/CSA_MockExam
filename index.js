@@ -43,7 +43,10 @@ function generateQuiz() {
       <div class='card-body'>
         <form class='pointer'>`+
         content.replaceAll('index',index.toString())+
-          `<button type='button' class='btn btn-primary mt-3' onClick='submitAnswer(${index},this);'>Submit</button>
+          `<div id=alert_${index} class="alert alert-danger d-none" role="alert">
+          You selected too many options!
+        </div>
+          <button type='button' class='btn btn-primary mt-3' onClick='submitAnswer(${index},this);'>Submit</button>
               <div class='Answer alert alert-dark m-4 d-none'><strong>Answer: </strong><br>`+
               answer.join("<br>")+
               `</div>
@@ -117,9 +120,29 @@ function generateQuiz() {
 
       questions_subset[index]['candidates'].splice(indexExists,1);
     }
+
+    //Checks if user selected more candidates than needed
+    if (questions_subset[index]["Answer"].length < questions_subset[index]["candidates"].length) Show_Error_ManyCandidates(e, index);
+        else Remove_Error_ManyCandidates(e, index);
 }
 
 
+
+function Show_Error_ManyCandidates(e, index){
+  
+  //Shows the Alert and removes the Submit Btn
+  const bodyID = index + 1;
+  $("#collapse"+bodyID).find('.btn-primary').addClass("d-none");
+  $('#alert_'+index).removeClass("d-none");
+}
+
+function Remove_Error_ManyCandidates(e, index){
+
+  //Removes the Alert and shows the Submit Btn
+  const bodyID = index + 1;
+  $("#collapse"+bodyID).find('.btn-primary').removeClass("d-none");
+  $('#alert_'+index).addClass("d-none"); 
+}
 
 
 function submitAnswer(index,e) {
@@ -132,7 +155,7 @@ function submitAnswer(index,e) {
   e.disabled=true;
   e.innerText ="Done";
   $("#collapse"+bodyID).children().addClass("disable-div");
-  $("#collapse"+bodyID).find('.alert').removeClass("d-none");
+  $("#collapse"+bodyID).find('.alert-dark').removeClass("d-none");
 
   $("#questionCount").text(`Questions: ${questionCount}/60`);
   $("#correctCount").text(`Correct: ${correctCount}/60`);
