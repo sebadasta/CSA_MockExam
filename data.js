@@ -720,16 +720,6 @@ const jsontxt = [
      "Guess": "<p>Submit<\/p>"
     },
     {
-     "Number": "CSAP0138",
-     "Active": true,
-     "Front (html)": "Navigate here to create a new relationship role",
-     "Back (HTML)": "<p>Configuration > Suggested Relationships<\/p>",
-     "Category": "ServiceNow Overview",
-     "Random Sort Code": "374142",
-     "Type": "Menu Path",
-     "Guess": "<p>Configuration > Relationships > Suggested Relationships<\/p>"
-    },
-    {
      "Number": "CSAP0713",
      "Active": true,
      "Front (html)": "<p>Where do users personalize their user interface?<\/p>\n<ul style=\"list-style-position: inside;\"><li onClick='selectCandidate(this,index)'>System Settings<\/li><li onClick='selectCandidate(this,index)'>Custom UI<\/li><li onClick='selectCandidate(this,index)'>Control Panel<\/li><li onClick='selectCandidate(this,index)'>User Preferences<\/li><\/ul>",
@@ -6619,7 +6609,8 @@ const jsontxt = [
      "Back (HTML)": "<p><strong>All<\/strong> > <strong>System Security<\/strong> ><strong> Users and Groups<\/strong> > <strong>Groups<\/strong><\/p>",
      "Category": "Application\/Access Control",
      "Random Sort Code": "318753.0",
-     "Type": "Menu Path"
+     "Type": "Menu Path",
+     "Guess": "<p><strong>All<\/strong> > <strong>System Security<\/strong> ><strong> Users and Groups<\/strong> > <strong>Groups<\/strong><\/p>"
     },
     {
      "Number": "CSAP0420",
