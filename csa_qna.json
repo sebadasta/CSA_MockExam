@@ -4963,7 +4963,7 @@
  {
   "Number": "CSAP0643",
   "Active": true,
-  "Front (html)": "<p>What are the <strong>three<\/strong> ServiceNow Mobile Apps?<\/p>\n<ul style=\"list-style-position: inside;\"><li onClick='selectCandidate(this,index)'>ServiceNow Onboarding (now&nbsp;Mobile App for HR Service Delivery)<\/li><li onClick='selectCandidate(this,index)'>Now on the Go<\/li><li onClick='selectCandidate(this,index)'>ServiceNow Agent<\/li><li onClick='selectCandidate(this,index)'>Now Mobile<\/li><\/ul>",
+  "Front (html)": "<p>What are the <strong>three<\/strong> ServiceNow Mobile Apps?<\/p>\n<ul style=\"list-style-position: inside;\"><li onClick='selectCandidate(this,index)'>ServiceNow Onboarding (now Mobile App for HR Service Delivery)<\/li><li onClick='selectCandidate(this,index)'>Now on the Go<\/li><li onClick='selectCandidate(this,index)'>ServiceNow Agent<\/li><li onClick='selectCandidate(this,index)'>Now Mobile<\/li><\/ul>",
   "Back (HTML)": "<p>ServiceNow Onboarding (now Mobile App for HR Service Delivery)<br \/>ServiceNow Agent<br \/>Now Mobile<\/p>",
   "Category": "Development",
   "Random Sort Code": "891185",
